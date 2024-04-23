@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Lagre billett</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lagreBillett.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Lagre Billett</h1>
+<form class="form">
+
+    <div class="form-group">
+        <label>Navn</label>
+        <select id="navn">
+            <option value="0" selected hidden disabled>Velg film</option>
+            <option value="Avatar 2">Avatar 2</option>
+            <option value="The Barbie Movie">The Barbie Movie</option>
+            <option value="Super Mario Bros. Movie">Super Mario Bros. Movie</option>
+        </select>
+        <span id="errorNavn"></span>
+    </div>
+    <div class="form-group">
+        <label>Antall</label>
+        <input type="text" id="antall" required/>
+        <span id="errorAntall"></span>
+    </div>
+    <div class="form-group">
+        <label>Fornavn</label>
+        <input type="text" id="fornavn" required/>
+        <span id="errorFornavn"></span>
+    </div>
+    <div class="form-group">
+        <label>Etternavn</label>
+        <input type="text" id="etternavn" required/>
+        <span id="errorEtternavn"></span>
+    </div>
+    <div class="form-group">
+        <label>Telefon nummer</label>
+        <input type="text" id="tlfnr" required/>
+        <span id="errorTlfnr"></span>
+    </div>
+    <div class="form-group">
+        <label>E-postadresse</label>
+        <input type="text" id="email" required/>
+        <span id="errorEmail"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="button" value="Registrer" class="btn btn-primary" onclick="lagreBillett()"/>
+    </div>
+</form>
+</div>
+</body>
+</html>
